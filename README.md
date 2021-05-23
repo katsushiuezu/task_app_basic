@@ -23,10 +23,11 @@ $ bundle install
 その後、データベースへのマイグレーションを実行します。
 
 ```
-$ rails db:migrate
-```
+$ rails db:migrate```
 
 マイグレーション実行後、サンプルユーザーを生成します。
+
+test
 
 ```
 $ rails db:seed
