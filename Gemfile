@@ -17,7 +17,7 @@ gem 'active_decorator'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'rails_autolink'
-
+gem 'rinku'
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

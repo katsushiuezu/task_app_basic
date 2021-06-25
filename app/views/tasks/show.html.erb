@@ -17,17 +17,17 @@
         <tr>
           <th class="active"><%= Task.human_attribute_name :description %></th>
           <td>
-            <%= auto_link(safe_join(@task.description.split("\n"), tag(:br))) %>
-        </td>
-      </tr>
-      <tr>
-        <th class="active"><%= Task.human_attribute_name :created_at %></th>
-        <td><%= l(@task.created_at, format: :long) %></td>
-      </tr>
-      <tr>
-        <th class="active"><%= Task.human_attribute_name :updated_at %></th>
-        <td><%= l(@task.updated_at, format: :long) %></td>
-      </tr>
+            <%== Rinku.auto_link(@task.description, :all,'target="_blank"') %>
+          </td>
+        </tr>
+        <tr>
+          <th class="active"><%= Task.human_attribute_name :created_at %></th>
+          <td><%= l(@task.created_at, format: :long) %></td>
+        </tr>
+        <tr>
+          <th class="active"><%= Task.human_attribute_name :updated_at %></th>
+          <td><%= l(@task.updated_at, format: :long) %></td>
+        </tr>
      </tbody>
     </table>
     
@@ -35,11 +35,7 @@
       <%= link_to "編集", edit_user_task_path(@user, @task), class: "btn btn-lg btn-success" %>
       <%= link_to "削除", user_task_path(@user, @task), method: :delete,
       data: { confirm: "「#{@task.name}」を削除します。よろしいですか？" }, class: "btn btn-lg btn-danger" %>
-
-      
-      
-
     </div>
-   </div>
-  </div>        
+  </div>
+</div>        
       
