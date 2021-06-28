@@ -92,3 +92,4 @@ module ApplicationHelper
 end
 
 
+  <%=raw Rink.auto_link(@task.description, :all,'target="_blank"' %>
